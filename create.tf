@@ -44,44 +44,7 @@ module "root" {
   asg_maximum_count        = var.asg_maximum_count
   alb_listening_port       = var.alb_listening_port
 }
-/*
-module "public_subnet_one" {
-  source = "./module/public_subnet_one"
 
-  subnet_one_cidr         = var.subnet_one_cidr
-  subnet_one_type         = var.subnet_one_type
-}
-
-module "public_subnet_two" {
-  source = "./module/public_subnet_two"
-
-  subnet_two_cidr         = var.subnet_two_cidr
-  subnet_two_type         = var.subnet_two_type
-  solo_instance_ami       = var.solo_instance_ami
-  solo_instance_type      = var.solo_instance_type
-  solo_instance_storage   = var.solo_instance_storage
-}
-
-module "private_subnet_three" {
-  source = "./module/private_subnet_three"
-
-  subnet_three_cidr         = var.subnet_three_cidr
-  subnet_three_type         = var.subnet_three_type
-}
-
-module "private_subnet_four" {
-  source = "./module/private_subnet_four"
-
-  subnet_four_cidr         = var.subnet_four_cidr
-  subnet_four_type         = var.subnet_four_type
-  asg_instance_ami         = var.asg_instance_ami
-  asg_instance_type        = var.asg_instance_type
-  asg_instance_storage     = var.asg_instance_storage
-  asg_minimum_count        = var.asg_minimum_count
-  asg_maximum_count        = var.asg_maximum_count
-  alb_listening_port       = var.alb_listening_port
-}
-*/
 variable "aws_assumed_role_arn" {
 }
 
